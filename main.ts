@@ -10,4 +10,4 @@ if (TEXT.length < 1 || TEXT.length > 280) {
 const outputDir = process.env.POEM_OUTPUT_DIR || '/output';
 mkdirSync(outputDir, { recursive: true });
 writeFileSync(join(outputDir, 'entry.txt'), TEXT, 'utf8');
-console.log(TEXT.length);
+console.log(`Characters: ${TEXT.length}`);

@@ -1,7 +1,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-const TEXT = 'Forty-six billion light-years away, in a galaxy whose light tonight will never reach us, a hydrogen atom emits the exact same wavelength it does in a quiet room on Earth.';
+const TEXT = 'The shadow of the west hill moves across the pasture without bending a blade of grass.\nIt climbs the fence, then the barn wall, then the ridge, as the whole valley tilts into night.';
 
 if (TEXT.length < 1 || TEXT.length > 280) {
   throw new Error('Entry must be 1-280 characters');
